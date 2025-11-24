@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8950894B2ED3DB600059A1D3 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8950894A2ED3DB600059A1D3 /* ParseSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		895089212ED3D8D40059A1D3 /* BeReal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeReal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8950894B2ED3DB600059A1D3 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = BeReal;
 			packageProductDependencies = (
+				8950894A2ED3DB600059A1D3 /* ParseSwift */,
 			);
 			productName = BeReal;
 			productReference = 895089212ED3D8D40059A1D3 /* BeReal.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 895089182ED3D8D40059A1D3;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				895089492ED3DB600059A1D3 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 895089222ED3D8D40059A1D3 /* Products */;
 			projectDirPath = "";
@@ -345,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		895089492ED3DB600059A1D3 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8950894A2ED3DB600059A1D3 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 895089492ED3DB600059A1D3 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 895089192ED3D8D40059A1D3 /* Project object */;
 }
